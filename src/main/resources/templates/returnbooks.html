@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Return Books</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body >
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="home.html">Library System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link" href="SearchBooks.html">Search for Books</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="RequestBooks.html">Request for Books</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="CheckoutBooks.html">Checkout Books</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Return Books</h1>
+
+      <form action="/returnbooks" method="post">
+        <div class="form-group">
+          <label for="book-title">Book Title</label>
+          <input type="text" class="form-control" id="book-title" name="bookTitle" placeholder="Enter book title" required>
+        </div>
+        <div class="form-group">
+          <label for="borrower-name">Borrower Name</label>
+          <input type="text" class="form-control" id="borrower-name" name="borrowerName" placeholder="Enter borrower name" required>
+        </div>
+        <div class="form-group">
+          <label for="return-date">Return Date</label>
+          <input type="date" class="form-control" id="return-date" name="returnDate" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Return Book</button>
+      </form>
+    </div>
+
+    <div class="col-md-6">
+      <h1 class="text-center"></h1>
+      <div class="text-center">
+        <img src="Images/returningbook.png" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
